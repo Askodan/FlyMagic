@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: f6a0298ae626e9745aacb342c391e34f
+timeCreated: 1469638514
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: back
+    100002: bend1Handle
+    100004: bottom
+    100006: but_lewy
+    100008: but_prawy
+    100010: front1
+    100012: left
+    100014: nogawka_lewa
+    100016: nogawka_prawa
+    100018: oko
+    100020: okularki
+    100022: pPlane1
+    100024: pPlane3
+    100026: pPlane4
+    100028: pPlane5
+    100030: pPlane6
+    100032: pSphere2
+    100034: pSphere3
+    100036: pSphere4
+    100038: pTorus1
+    100040: pupa
+    100042: pupa1
+    100044: pupa2
+    100046: pupa3
+    100048: reka
+    100050: side1
+    100052: spodenki
+    100054: //RootNode
+    100056: transform1
+    100058: transform10
+    100060: transform11
+    100062: transform12
+    100064: transform2
+    100066: transform3
+    100068: transform4
+    100070: transform5
+    100072: transform6
+    100074: transform7
+    100076: transform8
+    100078: transform9
+    400000: back
+    400002: bend1Handle
+    400004: bottom
+    400006: but_lewy
+    400008: but_prawy
+    400010: front1
+    400012: left
+    400014: nogawka_lewa
+    400016: nogawka_prawa
+    400018: oko
+    400020: okularki
+    400022: pPlane1
+    400024: pPlane3
+    400026: pPlane4
+    400028: pPlane5
+    400030: pPlane6
+    400032: pSphere2
+    400034: pSphere3
+    400036: pSphere4
+    400038: pTorus1
+    400040: pupa
+    400042: pupa1
+    400044: pupa2
+    400046: pupa3
+    400048: reka
+    400050: side1
+    400052: spodenki
+    400054: //RootNode
+    400056: transform1
+    400058: transform10
+    400060: transform11
+    400062: transform12
+    400064: transform2
+    400066: transform3
+    400068: transform4
+    400070: transform5
+    400072: transform6
+    400074: transform7
+    400076: transform8
+    400078: transform9
+    2300000: front1
+    2300002: oko
+    2300004: okularki
+    2300006: pPlane1
+    2300008: pPlane3
+    2300010: pPlane4
+    2300012: pPlane5
+    2300014: pPlane6
+    2300016: pupa3
+    2300018: side1
+    2300020: spodenki
+    3300000: front1
+    3300002: oko
+    3300004: okularki
+    3300006: pPlane1
+    3300008: pPlane3
+    3300010: pPlane4
+    3300012: pPlane5
+    3300014: pPlane6
+    3300016: pupa3
+    3300018: side1
+    3300020: spodenki
+    4300000: front1
+    4300002: side1
+    4300004: oko
+    4300006: pupa3
+    4300008: spodenki
+    4300010: okularki
+    4300012: pPlane1
+    4300014: pPlane3
+    4300016: pPlane4
+    4300018: pPlane5
+    4300020: pPlane6
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

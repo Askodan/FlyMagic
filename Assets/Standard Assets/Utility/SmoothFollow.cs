@@ -19,10 +19,8 @@ namespace UnityStandardAssets.Utility
 		private float rotationDamping;
 		[SerializeField]
 		private float heightDamping;
-
 		// Use this for initialization
 		void Start() { }
-
 		// Update is called once per frame
 		void LateUpdate()
 		{
@@ -32,11 +30,10 @@ namespace UnityStandardAssets.Utility
 
 			// Calculate the current rotation angles
 			var wantedRotationAngle = target.eulerAngles.y;
-			var wantedHeight = target.position.y + height;
+			var wantedHeight = target.position.y+height;
 
 			var currentRotationAngle = transform.eulerAngles.y;
 			var currentHeight = transform.position.y;
-
 			// Damp the rotation around the y-axis
 			currentRotationAngle = Mathf.LerpAngle(currentRotationAngle, wantedRotationAngle, rotationDamping * Time.deltaTime);
 

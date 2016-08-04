@@ -49,6 +49,9 @@ ModelImporter:
     7400004: Turn Right
     7400006: Flap
     7400008: Turn Left
+    7400010: Hover
+    7400012: Turn Back
+    7400014: Dive
     9500000: //RootNode
     13700000: DragonModel1
   materials:
@@ -357,6 +360,204 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Torso2
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Torso/Wing_left
+        weight: 1
+      - path: Armature/Torso/Wing_left/Wing_left2
+        weight: 1
+      - path: Armature/Torso/Wing_left/Wing_left2/Wing_left3
+        weight: 1
+      - path: Armature/Torso/Wing_right
+        weight: 1
+      - path: Armature/Torso/Wing_right/Wing_right2
+        weight: 1
+      - path: Armature/Torso/Wing_right/Wing_right2/Wing_right3
+        weight: 1
+      - path: DragonModel1
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 149
+    - serializedVersion: 16
+      name: Hover
+      takeName: Default Take
+      firstFrame: 208
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Torso2
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Torso/Wing_left
+        weight: 1
+      - path: Armature/Torso/Wing_left/Wing_left2
+        weight: 1
+      - path: Armature/Torso/Wing_left/Wing_left2/Wing_left3
+        weight: 1
+      - path: Armature/Torso/Wing_right
+        weight: 1
+      - path: Armature/Torso/Wing_right/Wing_right2
+        weight: 1
+      - path: Armature/Torso/Wing_right/Wing_right2/Wing_right3
+        weight: 1
+      - path: DragonModel1
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 149
+    - serializedVersion: 16
+      name: Turn Back
+      takeName: Default Take
+      firstFrame: 245
+      lastFrame: 262.7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Torso
+        weight: 1
+      - path: Armature/Torso/Neck
+        weight: 1
+      - path: Armature/Torso/Neck/Head
+        weight: 1
+      - path: Armature/Torso/Torso2
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3/Tail4
+        weight: 1
+      - path: Armature/Torso/Torso2/Tail/Tail2/Tail3/Tail4/Tail5
+        weight: 1
+      - path: Armature/Torso/Wing_left
+        weight: 1
+      - path: Armature/Torso/Wing_left/Wing_left2
+        weight: 1
+      - path: Armature/Torso/Wing_left/Wing_left2/Wing_left3
+        weight: 1
+      - path: Armature/Torso/Wing_right
+        weight: 1
+      - path: Armature/Torso/Wing_right/Wing_right2
+        weight: 1
+      - path: Armature/Torso/Wing_right/Wing_right2/Wing_right3
+        weight: 1
+      - path: DragonModel1
+        weight: 1
+      - path: Empty
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 149
+    - serializedVersion: 16
+      name: Dive
+      takeName: Default Take
+      firstFrame: 272
+      lastFrame: 299
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

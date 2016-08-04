@@ -6,17 +6,28 @@ using System.Collections;
 //		- byc mnoze pierwsze wystarczy
 //		- lot określoną wysokość nad przeszkodami
 //		- być może raycaster kilka metrów przed smokiem w dół
+//	2. hamowanie i wiszenie w powietrzu
+//		- stany już istnieją brak: animacji, obsługi stanów, części logiki
+//	3. przebudowa analizy stanów
+//		- stany są chujowe.
+//		- muszą się przełączać z sensem i psuć nawzajem
+//		- istnieje szansa ze logika rozmyta może tu pomóc
+//  4. stan szybkich skrętów
+//		- dodatkowy stan z 1 animacją chyba nie blendowaną
+//		- możliwe, ze animacja od pikowania i lotu w górę będzie tu tez pasować
+//		- w tym stanie skręty są 3 razy szybsze
+//		- dotyczy tylko skrętów w bok, pochylenie jest już wystarczająco szybkie i jest ok
 
 public class DragonMovement : MonoBehaviour {
 	public enum DragonFlightState{
-		gliding = 0,//
-		flapping = 1,//
-		turningLeft = 2,//
-		turningRight = 3,//
-		flappingLeft = 4,//
-		flappingRight = 5,//
-		diving = 6, //
-		touchingTheSky = 7, //
+		gliding = 0,
+		flapping = 1,
+		turningLeft = 2,
+		turningRight = 3,
+		flappingLeft = 4,
+		flappingRight = 5,
+		diving = 6,
+		touchingTheSky = 7,
 		hovering = 8,
 		breaking = 9,
 		turningBack = 10,
@@ -29,17 +40,14 @@ public class DragonMovement : MonoBehaviour {
 	[Tooltip("Lista punktów.")]
 	public GameObject[] wayPoints;
 	int target_point;//prywatne
-	bool stopAtTarget;
 	[Tooltip("Aby było weselej, podczas szybowania do przodu będzie cały czas opadać z prędkością downSpeed (jak komuś się nudzi, niech zmieni nazwę).")]
 	public float downSpeed;
 	[Tooltip("Ale skoro szybuje, to musi mieć jakąś standardową prędkość szybowania glideSpeed.")]
 	public float maxGlideSpeed;
-	[Tooltip("Ponieważ nie chce mi się myśleć cały czas będzie tracić prędkość z przyspieszeniem dumpAcc.")]
+	[Tooltip("Ponieważ nie chce mi się myśleć cały czas będzie ją traciś z przyspieszeniem dumpAcc.")]
 	public float dumpAcc;
 	[Tooltip("Jak straci poniżej progu to odpala machanie skrzydłami.")]
 	public float minSpeed;
-	[Tooltip("Prędkość uznawana już za praktycznie zerową.")]
-	public float almostZeroSpeed;
 	[Tooltip("Każde machnięcie dodaje prędkości o flapSpeed.")]
 	public float flapSpeed;
 	//to wszystko wymaga, żeby miał aktualną prędkość szybowania
@@ -52,19 +60,28 @@ public class DragonMovement : MonoBehaviour {
 	public float terminalSpeedHorizontal;
 	[Tooltip("Maksymalna prędkość lotu smoka - czyli podczas pikowania.")]
 	public float terminalSpeedVertical;
-	[Tooltip("Przyspieszenie ziemskie, potrzebne dla smoka, który nie leci idealnie poziomo - czyli praktycznie cały czas")]
+	[Tooltip("Przyspieszenie ziemskie - albo jego odpowiednik dla pikujacego smoka")]
 	public float g;
-	[Tooltip("Jeżeli kąt będzie większy, to smok zawróci w miejscu.")]
-	public float maxAngleHor;
-	[Tooltip("Jeżeli kąt będzie większy, to smok dostanie animację skrętu.")]
-	public float Angle2Animate;
+	//to powoli wydaje się być niepotrzebne
+	public float maxAngleDown;
+	//hmmm... czy istnieje maksymalne kąt lotu w górę? istnieje i zalezy od prędkości (jak szybko energia potencjalna pochłania kinetyczną)
+	// teraz pytanie, czy smok musi takie rzeczy przewidywać... w zasadzie przeliczenie energii kinetycznej na potencjalną to banał
+	// czyli gdyby smok nagle zaczął lecieć w górę to wie jak wysoko doleci...
+	// tylko czy nasza oszukańcza symulacja to poprawnie uwzględni...
+	// załóżmy zatem dla uproszczenia, że siła nośna skrzydeł w poziomej pozycji smoka przy prędkośći między glideSpeed, a minSpeed pokonuje grawitacje i smok opada ze stałą prędkośćią dumpSpeed
+	// teraz: jeżeli zwiększymy kąt smokowania do 90 siła nośna przestaje praktycznie istnieć - istnieje tylko malejąca prędkość którą miał na początku
+	// jeżeli starczy prędkości na dostanie się do punktu to ok, smok dolatuje, a potem macha skrzydłami...i dopóki nie osiągnie prędkości minSpeed do swojego przodu
+	// spada z prędkością graniczną
+	// powyżej tego kąta
 
-	[Tooltip("Jak długo ma trwać zawracanie smoka w sekundach.")]
-	public float TimeOfTurningBack;
+	public float maxAngleUp;
+
 	//pozostał opis skręcania i krążenia w celu polecenia wyżej mimo braku dość prędkości
 	//skręcanie musi mieć jakąś maksymalną prędkość obrotową...
 	[Tooltip("Maksymalna prędkość skrętu smoka")]
 	public float maxAngleSpeed;
+	[Tooltip("Prędkość pochyłu")]
+	public float pitchSpeed;
 	float actualAngleSpeed;
 	//dobrze by było dać smokowi możliwość wiszenia w powietrzuw punkcie celu... chwilowo nie mam do tego animacji, więc wyglądać będzie chujowo
 	//ale logika gry przewiduje coś takiego... czasami
@@ -75,7 +92,7 @@ public class DragonMovement : MonoBehaviour {
 	//wyliczy sobie wymarzone prędkość i potem jakoś do nich będzie starał się dążyć...
 	float targetAngularSpeed;
 	float targetGlideSpeed;
-	//float targetPitch;
+	float targetPitch;
 
 	float pitch;
 
@@ -85,10 +102,8 @@ public class DragonMovement : MonoBehaviour {
 	public Transform target;
 	[Tooltip("Odległość na jakiej co najwyżej musi znaleźć się smok, by zaliczyć mu dotarcie do celu.")]
 	public float dist2pass;
-	[Tooltip("Odległość na jakiej co najwyżej musi znaleźć się smok, by zaczął łaskawie hamować, by zawisnąć w powietrzu.")]
-	public float dist2break;
+
 	Vector3 target_pos;//prywatne
-	Quaternion target_rot;//prywatne
 
 	float distHor;//prywatne
 	float distVer;//prywatne
@@ -108,16 +123,11 @@ public class DragonMovement : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 	bool atTarget;
-	bool inNotInterruptableState = false;
+	// Update is called once per frame
 	void Update () {
-		//zakoncz update'a, jeżeli jest w stanie, którego nie wolno przerwać
-		if (inNotInterruptableState) {
-			UpdateDragonSteering ();
-			return;
-		}
 		
 		FindTarget ();
-		if (distHor + Mathf.Abs(distVer) < dist2pass) {
+		if (distHorGlob + Mathf.Abs(distVerGlob) < dist2pass) {
 			atTarget = true;
 		} else {
 			atTarget = false;
@@ -126,6 +136,7 @@ public class DragonMovement : MonoBehaviour {
 			target_point++;
 			target_point = target_point % wayPoints.Length;
 			target = wayPoints [target_point].transform;
+			//FindTarget ();
 		} else {
 			AnalyzeState ();
 			UpdateDragonSteering ();
@@ -133,14 +144,10 @@ public class DragonMovement : MonoBehaviour {
 	}
 	//używa predkości do przesunięcia smoka w grze
 	void UpdateDragonSteering (){
-		if (state != DragonFlightState.turningBack) {
-			if (state == DragonFlightState.hovering) {
-				transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.Euler (0f, transform.rotation.y, 0f), Time.deltaTime);
-			} else {
-				Quaternion temperTemp = Quaternion.Slerp (transform.rotation, target_rot, actualAngleSpeed * Time.deltaTime);
-				transform.rotation = temperTemp;
-			}
-		}
+		transform.Rotate(0, -actualAngleSpeed*Time.deltaTime, 0, Space.World);
+		//pitch updater
+		Quaternion temperTemp = Quaternion.Slerp(transform.rotation, Quaternion.Euler(-targetPitch, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z), pitchSpeed*Time.deltaTime);
+		transform.rotation = temperTemp;
 		transform.position += transform.forward * Time.deltaTime * CalculateActualSpeed ();
 		transform.position -= Vector3.up * Time.deltaTime * CalculateDownSpeed ();
 	}
@@ -150,15 +157,16 @@ public class DragonMovement : MonoBehaviour {
 		if (pitch > 180f) {
 			pitch -= 360f;
 		}
+
 		calculatedSpeedChange = 0;
 		calculatedSpeedChange -= dumpAcc * actualGlideSpeed / maxGlideSpeed * Time.deltaTime;
 		calculatedSpeedChange += Mathf.Sin (pitch * Mathf.Deg2Rad) * g * Time.deltaTime;
 
-		if ((state == DragonFlightState.breaking || state == DragonFlightState.hovering) && stopAtTarget) {
-			actualGlideSpeed = Mathf.Lerp(actualGlideSpeed, targetGlideSpeed, breakAcc*Time.deltaTime);
-		} else {
-			actualGlideSpeed = Mathf.Clamp (actualGlideSpeed + calculatedSpeedChange, 0, terminalSpeedVertical);
+		if (state == DragonFlightState.breaking) {
+			calculatedDownSpeed -= breakAcc * Time.deltaTime;
 		}
+
+		actualGlideSpeed = Mathf.Clamp (actualGlideSpeed + calculatedSpeedChange, 0, terminalSpeedVertical);
 		return actualGlideSpeed;
 	}
 	//oblicza prędkość spadku - smok cały czas trochę opada
@@ -177,82 +185,111 @@ public class DragonMovement : MonoBehaviour {
 	//na koniec przekazuje go animatorowi
 	// to wszystko trzeba przerobić, bo zrobiło się mnóstwo stanów
 	void AnalyzeState(){
-		stopAtTarget = !useWaypoints;
-		float speedCoef = actualGlideSpeed / terminalSpeedVertical;
-		actualAngleSpeed = Mathf.Clamp (targetAngularSpeed, 0, maxAngleSpeed) * Mathf.Clamp01(1.5f-speedCoef);
+		actualAngleSpeed = Mathf.Lerp(actualAngleSpeed, targetAngularSpeed, 10*Time.deltaTime);
+		float coefficent = 2 - actualGlideSpeed / maxGlideSpeed;
+		actualAngleSpeed = Mathf.Clamp (actualAngleSpeed, -maxAngleSpeed*coefficent, maxAngleSpeed*coefficent);
 		DragonFlightState before = state;
-		if ((Mathf.Abs(angleHor) > maxAngleHor && distHor > dist2break)) {
-			StartCoroutine (TurnBack ());
-			state = DragonFlightState.turningBack;
-		} else {
-			if ((distHor < dist2break*Mathf.Clamp(speedCoef*10f, 1, Mathf.Infinity) && stopAtTarget) || state == DragonFlightState.breaking) {
-				//if(Mathf.Abs(distVer)<dist2break){
-				if (Mathf.Abs(distVer+distHor)<dist2pass){//actualGlideSpeed < almostZeroSpeed) {
-					state = DragonFlightState.hovering;
-					targetGlideSpeed = 0;
-				} else {
-					if(actualGlideSpeed > targetGlideSpeed)
-						state = DragonFlightState.breaking;
-					//targetGlideSpeed = 0f;
-				}
-				/*}else{
-					if (distVer < 0) {
-						state = DragonFlightState.diving;
-					} else {
-						state = DragonFlightState.touchingTheSky;
-						if (actualGlideSpeed < targetGlideSpeed) {
-							state = DragonFlightState.flapping;
-							flapPower = Mathf.Lerp (3, 1, actualGlideSpeed / targetGlideSpeed);
-							anim.SetFloat("flapper", flapPower);
-						}
-					}
-				}*/
+
+		if (actualAngleSpeed > maxAngleSpeed / 2f) {
+			if (actualAngleSpeed > 0) {
+				state = DragonFlightState.turningLeft;
 			} else {
-				if (actualGlideSpeed > targetGlideSpeed) {
-					state = DragonFlightState.gliding;
-					if (Mathf.Abs (angleHor) > Angle2Animate) {
-						if (angleHor < 0) {
-							state = DragonFlightState.turningLeft;	
-						} else {
-							state = DragonFlightState.turningRight;
-						}
-					} else {
-						if (Mathf.Abs (angleVerGlob) > Angle2Animate) {
-							if (distVer > 0) {
-								state = DragonFlightState.diving;
-							} else {
-								state = DragonFlightState.touchingTheSky;
-							}
-						}
-					}
-				} else {
-					state = DragonFlightState.flapping;
-					flapPower = Mathf.Lerp (3, 1, actualGlideSpeed / targetGlideSpeed);
-					anim.SetFloat("flapper", flapPower);
-					if (Mathf.Abs(angleHor) > Angle2Animate) {
-						if (angleHor < 0) {
-							state = DragonFlightState.flappingLeft;
-						} else {
-							state = DragonFlightState.flappingRight;
-						}
-					}
-				}
+				state = DragonFlightState.turningRight;
 			}
 		}
+
+		/*if (-pitch > maxAngleDown) {
+			state = DragonFlightState.diving;
+		} else {
+			if (pitch > maxAngleUp) {
+				state = DragonFlightState.touchingTheSky;
+			}
+		}*/
+
+		//if (targetGlideSpeed - actualGlideSpeed < 10) {
+		//	state = DragonFlightState.breaking;
+		//}
+		if (actualGlideSpeed > targetGlideSpeed) {
+			state = DragonFlightState.gliding;
+		}
+		switch (state) {
+		case DragonFlightState.gliding:
+			if (actualGlideSpeed < targetGlideSpeed) {
+				state = DragonFlightState.flapping;
+			}
+			break;
+		case DragonFlightState.flapping:
+			if (Mathf.Abs (actualAngleSpeed) > maxAngleSpeed / 2f) {
+				if (actualAngleSpeed > 0) {
+					state = DragonFlightState.flappingLeft;
+				} else {
+					state = DragonFlightState.flappingRight;
+				}
+			}
+			if (actualGlideSpeed > targetGlideSpeed) {
+				state = DragonFlightState.gliding;
+			}
+			flapPower = Mathf.Lerp (3, 1, actualGlideSpeed / targetGlideSpeed - distVer * panicCoef);
+			anim.SetFloat("flapper", flapPower);
+			break;
+		case DragonFlightState.touchingTheSky:
+			break;
+		case DragonFlightState.diving:
+			break;
+		case DragonFlightState.turningLeft:
+			if (actualGlideSpeed < targetGlideSpeed) {
+				state = DragonFlightState.flappingLeft;
+			}
+			if (Mathf.Abs(actualAngleSpeed) < maxAngleSpeed / 2f) {
+				state = DragonFlightState.gliding;
+			}
+			break;
+		case DragonFlightState.turningRight:
+			if (actualGlideSpeed < targetGlideSpeed) {
+				state = DragonFlightState.flappingRight;
+			}
+			if (Mathf.Abs(actualAngleSpeed) < maxAngleSpeed / 2f) {
+				state = DragonFlightState.gliding;
+			}
+			break;
+		case DragonFlightState.flappingLeft:
+			if (actualAngleSpeed < maxAngleSpeed / 2f) {
+				state = DragonFlightState.flapping;
+			}
+			if (Mathf.Abs(actualAngleSpeed) < maxAngleSpeed / 2f) {
+				state = DragonFlightState.gliding;
+			}
+			break;
+		case DragonFlightState.flappingRight:
+			if (actualAngleSpeed < maxAngleSpeed / 2f) {
+				state = DragonFlightState.flapping;
+			}
+			if (Mathf.Abs(actualAngleSpeed) < maxAngleSpeed / 2f) {
+				state = DragonFlightState.gliding;
+			}
+			break;
+		case DragonFlightState.hovering:
+			break;
+		case DragonFlightState.breaking:
+			break;
+		}
+
+		if (!useWaypoints && atTarget) {
+			state = DragonFlightState.hovering;
+		}
+
 		if(state!=before)
 			anim.SetInteger ("State", (int)state);
 	}
 	//patrzy gdzie znajduje się cel... może warto wrzucić to do korutyny?
 	Vector3 FindTarget(){
 		target_pos = transform.InverseTransformPoint(target.position);
-		target_rot = Quaternion.LookRotation (target.position - transform.position);
 		CalculateBasicTargetInfo (out angleHor, out angleVer, out distHor, out distVer, Vector3.zero, target_pos);
 		CalculateBasicTargetInfo (out angleHorGlob, out angleVerGlob, out distHorGlob, out distVerGlob, transform.position, target.position);
 		CalculateNeededSpeed ();
 		return target_pos;
 	}
 	//obliczenie kilku parametrów, które wskażą drogę do celu
-	// prawdopodobnie przerobie bo generuje za duzo informacji
 	static void CalculateBasicTargetInfo (out float angleHor_, out float angleVer_, out float distHor_, out float distVer_, Vector3 pos, Vector3 tar_pos){
 		distVer_ = tar_pos.y-pos.y;
 		Vector3 target_pos_temp = new Vector3(tar_pos.x-pos.x, 0f, tar_pos.z-pos.z);
@@ -263,30 +300,20 @@ public class DragonMovement : MonoBehaviour {
 		angleVer_ *= Mathf.Rad2Deg;
 	}
 	void CalculateNeededSpeed (){
-		targetAngularSpeed = Mathf.Abs(angleHor)+Mathf.Abs(angleVer);
-		float panicAddition = angleVerGlob<0 ? 0 :  angleVerGlob * panicCoef;
-		if (state!=DragonFlightState.breaking)
-			targetGlideSpeed = Mathf.Clamp (distHor * 0.2f, 0f, maxGlideSpeed) + panicAddition;
-		else
-			targetGlideSpeed = Mathf.Clamp ((distHor + distVer) * 0.2f  + panicAddition, 0f, maxGlideSpeed);
-	}
+		//targetAngularSpeed = -360f * actualGlideSpeed / Mathf.PI / distHor;
+		targetAngularSpeed = -angleHor;
 
+		targetGlideSpeed = maxGlideSpeed;
+		if (angleVerGlob < maxAngleUp || actualGlideSpeed > Mathf.Sqrt (g * distVerGlob / 2)) {
+			targetPitch = angleVerGlob;
+		} else {
+			targetPitch = maxAngleUp;
+		}
+	}
 	//dodaje prędkość postępową o dmachania skrzydłami za pomocą eventu w animacji
 	public void WingFlaped (){
 		if (state != DragonFlightState.hovering && actualGlideSpeed < maxGlideSpeed)
 			actualGlideSpeed += flapSpeed * flapPower;
 	}
-	//zawracanie jako korutyna - like a BOSS(i chuj, ze chujowa korutyna i istnieją lepsze i tak się rzadko odpala i na krótko)
-	IEnumerator TurnBack(){
-		inNotInterruptableState = true;
-		Quaternion targetRotation = Quaternion.LookRotation (target.position - transform.position);
-		Quaternion firstRotation = transform.rotation;
-		for (float i = 0; i < TimeOfTurningBack; i+=Time.deltaTime) {
-			float progress = i / TimeOfTurningBack;
-			transform.rotation = Quaternion.Slerp(firstRotation, targetRotation, progress);
-			yield return null;
-		}
-		transform.rotation = targetRotation;
-		inNotInterruptableState = false;
-	}
+
 }
