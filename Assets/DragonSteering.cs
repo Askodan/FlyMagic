@@ -2,14 +2,14 @@
 using System.Collections;
 
 public class DragonSteering : MonoBehaviour {
-	DragonMovement DM;
 	public Transform target;
 	public Transform camera;
 	public float dist;
+	DragonTargetSystem targetSystem;
 	// Use this for initialization
 	void Start () {
-		DM = GetComponent<DragonMovement> ();
-		DM.target = target;
+		targetSystem = GetComponent<DragonTargetSystem> ();
+		targetSystem.target = target;
 	}
 	
 	// Update is called once per frame

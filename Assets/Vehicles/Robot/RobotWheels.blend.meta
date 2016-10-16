@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 908aa4730cc3135429119a12c1118891
+timeCreated: 1458307010
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armlb1_001
+    100002: Armlb2_001
+    100004: Axis
+    100006: Axis_001
+    100008: Axis_002
+    100010: Axis_003
+    100012: Base
+    100014: Cube
+    100016: Cube_001
+    100018: Cube_002
+    100020: Cube_003
+    100022: Finger1
+    100024: Finger1_001
+    100026: Grasper
+    100028: Holder
+    100030: Holder_001
+    100032: Holder_002
+    100034: Holder_003
+    100036: Holder_004
+    100038: Holderlb2_001
+    100040: Holderlb3_001
+    100042: //RootNode
+    100044: Wheelkb
+    100046: Wheelkb_001
+    100048: Wheelr
+    100050: Wheelr_001
+    400000: Armlb1_001
+    400002: Armlb2_001
+    400004: Axis
+    400006: Axis_001
+    400008: Axis_002
+    400010: Axis_003
+    400012: Base
+    400014: Cube
+    400016: Cube_001
+    400018: Cube_002
+    400020: Cube_003
+    400022: Finger1
+    400024: Finger1_001
+    400026: Grasper
+    400028: Holder
+    400030: Holder_001
+    400032: Holder_002
+    400034: Holder_003
+    400036: Holder_004
+    400038: Holderlb2_001
+    400040: Holderlb3_001
+    400042: //RootNode
+    400044: Wheelkb
+    400046: Wheelkb_001
+    400048: Wheelr
+    400050: Wheelr_001
+    2300000: Armlb1_001
+    2300002: Armlb2_001
+    2300004: Axis
+    2300006: Axis_001
+    2300008: Axis_002
+    2300010: Axis_003
+    2300012: Base
+    2300014: Cube
+    2300016: Cube_001
+    2300018: Cube_002
+    2300020: Cube_003
+    2300022: Finger1
+    2300024: Finger1_001
+    2300026: Grasper
+    2300028: Holder
+    2300030: Holder_001
+    2300032: Holder_002
+    2300034: Holder_003
+    2300036: Holder_004
+    2300038: Holderlb2_001
+    2300040: Holderlb3_001
+    2300042: Wheelkb
+    2300044: Wheelkb_001
+    2300046: Wheelr
+    2300048: Wheelr_001
+    2300050: //RootNode
+    3300000: Armlb1_001
+    3300002: Armlb2_001
+    3300004: Axis
+    3300006: Axis_001
+    3300008: Axis_002
+    3300010: Axis_003
+    3300012: Base
+    3300014: Cube
+    3300016: Cube_001
+    3300018: Cube_002
+    3300020: Cube_003
+    3300022: Finger1
+    3300024: Finger1_001
+    3300026: Grasper
+    3300028: Holder
+    3300030: Holder_001
+    3300032: Holder_002
+    3300034: Holder_003
+    3300036: Holder_004
+    3300038: Holderlb2_001
+    3300040: Holderlb3_001
+    3300042: Wheelkb
+    3300044: Wheelkb_001
+    3300046: Wheelr
+    3300048: Wheelr_001
+    3300050: //RootNode
+    4300000: Axis_003
+    4300002: Wheelkb_001
+    4300004: Axis_001
+    4300006: Wheelr_001
+    4300008: Base
+    4300010: Holder_004
+    4300012: Cube_002
+    4300014: Holder_003
+    4300016: Cube_003
+    4300018: Holder_002
+    4300020: Cube
+    4300022: Axis_002
+    4300024: Wheelr
+    4300026: Holder_001
+    4300028: Cube_001
+    4300030: Axis
+    4300032: Wheelkb
+    4300034: Holder
+    4300036: Armlb1_001
+    4300038: Holderlb2_001
+    4300040: Armlb2_001
+    4300042: Holderlb3_001
+    4300044: Grasper
+    4300046: Finger1_001
+    4300048: Finger1
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

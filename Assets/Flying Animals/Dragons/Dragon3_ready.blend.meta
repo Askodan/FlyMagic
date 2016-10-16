@@ -1,0 +1,3513 @@
+fileFormatVersion: 2
+guid: aacc19e5a21dad24e829d054cff4b8bf
+timeCreated: 1476311336
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Dragon3_LOD0
+    100002: Dragon3_LOD1
+    100004: Dragon3_LOD2
+    100006: Dragon3_LOD3
+    100008: //RootNode
+    100010: Dragon_Armature
+    100012: Eye_l
+    100014: Eye_r
+    100016: footbl
+    100018: footbp
+    100020: footfl
+    100022: footfp
+    100024: footkb0l
+    100026: footkb0p
+    100028: footkb1l
+    100030: footkb1p
+    100032: footkf0l
+    100034: footkf0p
+    100036: footkf1l
+    100038: footkf1p
+    100040: footmb0l
+    100042: footmb0p
+    100044: footmb1l
+    100046: footmb1p
+    100048: footmf0l
+    100050: footmf0p
+    100052: footmf1l
+    100054: footmf1p
+    100056: footsb0l
+    100058: footsb0p
+    100060: footsb1l
+    100062: footsb1p
+    100064: footsf0l
+    100066: footsf0p
+    100068: footsf1l
+    100070: footsf1p
+    100072: foottb0l
+    100074: foottb0p
+    100076: foottb1l
+    100078: foottb1p
+    100080: foottf0l
+    100082: foottf0p
+    100084: foottf1l
+    100086: foottf1p
+    100088: footwb0l
+    100090: footwb0p
+    100092: footwb1l
+    100094: footwb1p
+    100096: footwf0l
+    100098: footwf0p
+    100100: footwf1l
+    100102: footwf1p
+    100104: head
+    100106: head_target
+    100108: jaw0
+    100110: jaw1
+    100112: leg_b_target_l
+    100114: leg_b_target_p
+    100116: leg_f_target_l
+    100118: leg_f_target_p
+    100120: legb0l
+    100122: legb0p
+    100124: legb1l
+    100126: legb1p
+    100128: legb2l
+    100130: legb2p
+    100132: legf0l
+    100134: legf0p
+    100136: legf1l
+    100138: legf1p
+    100140: legf2l
+    100142: legf2p
+    100144: neck1
+    100146: neck2
+    100148: neck3
+    100150: neck4
+    100152: tail1
+    100154: tail2
+    100156: tail3
+    100158: tail4
+    100160: tail_target
+    100162: tongue0
+    100164: tongue1
+    100166: tongue2
+    100168: tongue3
+    100170: torso
+    100172: torso0
+    100174: torso1
+    100176: torso2
+    100178: wing0l
+    100180: wing0p
+    100182: wing1l
+    100184: wing1p
+    100186: wing2l
+    100188: wing2p
+    100190: wing_target_l
+    100192: wing_target_p
+    100194: wing_target_r_l
+    100196: wing_target_r_p
+    100198: wing_target_s_l
+    100200: wing_target_s_p
+    100202: wing_target_t_l
+    100204: wing_target_t_p
+    100206: wing_target_w_l
+    100208: wing_target_w_p
+    100210: wingk1l
+    100212: wingk1p
+    100214: wingm1l
+    100216: wingm1p
+    100218: wingm2l
+    100220: wingm2p
+    100222: wings1l
+    100224: wings1p
+    100226: wings2l
+    100228: wings2p
+    100230: wings3l
+    100232: wings3p
+    100234: wingt1l
+    100236: wingt1p
+    100238: wingt2l
+    100240: wingt2p
+    100242: wingt3l
+    100244: wingt3p
+    100246: wingw1l
+    100248: wingw1p
+    100250: wingw2l
+    100252: wingw2p
+    100254: wingw3l
+    100256: wingw3p
+    400000: Dragon3_LOD0
+    400002: Dragon3_LOD1
+    400004: Dragon3_LOD2
+    400006: Dragon3_LOD3
+    400008: //RootNode
+    400010: Dragon_Armature
+    400012: Eye_l
+    400014: Eye_r
+    400016: footbl
+    400018: footbp
+    400020: footfl
+    400022: footfp
+    400024: footkb0l
+    400026: footkb0p
+    400028: footkb1l
+    400030: footkb1p
+    400032: footkf0l
+    400034: footkf0p
+    400036: footkf1l
+    400038: footkf1p
+    400040: footmb0l
+    400042: footmb0p
+    400044: footmb1l
+    400046: footmb1p
+    400048: footmf0l
+    400050: footmf0p
+    400052: footmf1l
+    400054: footmf1p
+    400056: footsb0l
+    400058: footsb0p
+    400060: footsb1l
+    400062: footsb1p
+    400064: footsf0l
+    400066: footsf0p
+    400068: footsf1l
+    400070: footsf1p
+    400072: foottb0l
+    400074: foottb0p
+    400076: foottb1l
+    400078: foottb1p
+    400080: foottf0l
+    400082: foottf0p
+    400084: foottf1l
+    400086: foottf1p
+    400088: footwb0l
+    400090: footwb0p
+    400092: footwb1l
+    400094: footwb1p
+    400096: footwf0l
+    400098: footwf0p
+    400100: footwf1l
+    400102: footwf1p
+    400104: head
+    400106: head_target
+    400108: jaw0
+    400110: jaw1
+    400112: leg_b_target_l
+    400114: leg_b_target_p
+    400116: leg_f_target_l
+    400118: leg_f_target_p
+    400120: legb0l
+    400122: legb0p
+    400124: legb1l
+    400126: legb1p
+    400128: legb2l
+    400130: legb2p
+    400132: legf0l
+    400134: legf0p
+    400136: legf1l
+    400138: legf1p
+    400140: legf2l
+    400142: legf2p
+    400144: neck1
+    400146: neck2
+    400148: neck3
+    400150: neck4
+    400152: tail1
+    400154: tail2
+    400156: tail3
+    400158: tail4
+    400160: tail_target
+    400162: tongue0
+    400164: tongue1
+    400166: tongue2
+    400168: tongue3
+    400170: torso
+    400172: torso0
+    400174: torso1
+    400176: torso2
+    400178: wing0l
+    400180: wing0p
+    400182: wing1l
+    400184: wing1p
+    400186: wing2l
+    400188: wing2p
+    400190: wing_target_l
+    400192: wing_target_p
+    400194: wing_target_r_l
+    400196: wing_target_r_p
+    400198: wing_target_s_l
+    400200: wing_target_s_p
+    400202: wing_target_t_l
+    400204: wing_target_t_p
+    400206: wing_target_w_l
+    400208: wing_target_w_p
+    400210: wingk1l
+    400212: wingk1p
+    400214: wingm1l
+    400216: wingm1p
+    400218: wingm2l
+    400220: wingm2p
+    400222: wings1l
+    400224: wings1p
+    400226: wings2l
+    400228: wings2p
+    400230: wings3l
+    400232: wings3p
+    400234: wingt1l
+    400236: wingt1p
+    400238: wingt2l
+    400240: wingt2p
+    400242: wingt3l
+    400244: wingt3p
+    400246: wingw1l
+    400248: wingw1p
+    400250: wingw2l
+    400252: wingw2p
+    400254: wingw3l
+    400256: wingw3p
+    2300000: Eye_l
+    2300002: Eye_r
+    3300000: Eye_l
+    3300002: Eye_r
+    4300000: Dragon3_LOD3
+    4300002: Dragon3_LOD2
+    4300004: Dragon3_LOD1
+    4300006: Dragon3_LOD0
+    4300008: Eye_r
+    4300010: Eye_l
+    7400000: Default Take
+    7400002: Crawl
+    7400004: Dive
+    7400006: Flap
+    7400008: Hover
+    7400010: Idle
+    7400012: Run
+    7400014: Turm_Back
+    7400016: Turn_Left
+    7400018: Turn_Right
+    7400020: Dragon_ArmatureAction
+    9500000: //RootNode
+    13700000: Dragon3_LOD0
+    13700002: Dragon3_LOD1
+    13700004: Dragon3_LOD2
+    13700006: Dragon3_LOD3
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: -1
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Crawl
+      takeName: Crawl
+      firstFrame: -1
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dive
+      takeName: Dive
+      firstFrame: -1
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dragon_ArmatureAction
+      takeName: Dragon_ArmatureAction
+      firstFrame: -1
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Flap
+      takeName: Flap
+      firstFrame: -1
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.7151051
+        functionName: WingFlaped
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hover
+      takeName: Hover
+      firstFrame: -1
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: -1
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: -1
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Turm_Back
+      takeName: Turm_Back
+      firstFrame: -1
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Turn_Left
+      takeName: Turn_Left
+      firstFrame: -1
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Turn_Right
+      takeName: Turn_Right
+      firstFrame: -1
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dragon3_LOD0
+        weight: 1
+      - path: Dragon3_LOD0/Eye_l
+        weight: 1
+      - path: Dragon3_LOD0/Eye_r
+        weight: 1
+      - path: Dragon3_LOD1
+        weight: 1
+      - path: Dragon3_LOD2
+        weight: 1
+      - path: Dragon3_LOD3
+        weight: 1
+      - path: Dragon_Armature
+        weight: 1
+      - path: Dragon_Armature/head_target
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_b_target_p
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_l
+        weight: 1
+      - path: Dragon_Armature/leg_f_target_p
+        weight: 1
+      - path: Dragon_Armature/legf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footmf0l/footmf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footsf0l/footsf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/foottf0l/foottf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footfl/footwf0l/footwf1l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l
+        weight: 1
+      - path: Dragon_Armature/legf0l/legf1l/legf2l/footkf0l/footkf1l
+        weight: 1
+      - path: Dragon_Armature/legf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footmf0p/footmf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footsf0p/footsf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/foottf0p/foottf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footfp/footwf0p/footwf1p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p
+        weight: 1
+      - path: Dragon_Armature/legf0p/legf1p/legf2p/footkf0p/footkf1p
+        weight: 1
+      - path: Dragon_Armature/tail_target
+        weight: 1
+      - path: Dragon_Armature/torso
+        weight: 1
+      - path: Dragon_Armature/torso/torso0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/jaw0/jaw1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2
+        weight: 1
+      - path: Dragon_Armature/torso/torso0/neck1/neck2/neck3/neck4/head/tongue0/tongue1/tongue2/tongue3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footmb0l/footmb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footsb0l/footsb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/foottb0l/foottb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footbl/footwb0l/footwb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0l/legb1l/legb2l/footkb0l/footkb1l
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footmb0p/footmb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footsb0p/footsb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/foottb0p/foottb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footbp/footwb0p/footwb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/legb0p/legb1p/legb2p/footkb0p/footkb1p
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3
+        weight: 1
+      - path: Dragon_Armature/torso/torso1/torso2/tail1/tail2/tail3/tail4
+        weight: 1
+      - path: Dragon_Armature/wing0l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingk1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wings1l/wings2l/wings3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingt1l/wingt2l/wingt3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wing2l/wingw1l/wingw2l/wingw3l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l
+        weight: 1
+      - path: Dragon_Armature/wing0l/wing1l/wingm1l/wingm2l
+        weight: 1
+      - path: Dragon_Armature/wing0p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingk1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wings1p/wings2p/wings3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingt1p/wingt2p/wingt3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wing2p/wingw1p/wingw2p/wingw3p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p
+        weight: 1
+      - path: Dragon_Armature/wing0p/wing1p/wingm1p/wingm2p
+        weight: 1
+      - path: Dragon_Armature/wing_target_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_s_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_t_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_l/wing_target_r_l/wing_target_w_l
+        weight: 1
+      - path: Dragon_Armature/wing_target_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_s_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_t_p
+        weight: 1
+      - path: Dragon_Armature/wing_target_p/wing_target_r_p/wing_target_w_p
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

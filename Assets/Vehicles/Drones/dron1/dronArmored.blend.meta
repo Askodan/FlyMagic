@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 9e04feebf6e48704da021029a742577e
+timeCreated: 1456269945
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AirScrew2
+    100002: AirScrew3
+    100004: AirScrew3_001
+    100006: AirScrew3_002
+    100008: AirScrew3_003
+    100010: AirScrew4
+    100012: Base
+    100014: Cylinder
+    100016: //RootNode
+    100018: Motor_back_left
+    100020: Motor_back_right
+    100022: Motor_front_left
+    100024: Motor_front_right
+    100026: AirScrew2_left
+    100028: AirScrew2_right
+    100030: AirScrew3_left
+    100032: AirScrew3_right
+    100034: AirScrew4_left
+    100036: AirScrew4_right
+    400000: AirScrew2
+    400002: AirScrew3
+    400004: AirScrew3_001
+    400006: AirScrew3_002
+    400008: AirScrew3_003
+    400010: AirScrew4
+    400012: Base
+    400014: Cylinder
+    400016: //RootNode
+    400018: Motor_back_left
+    400020: Motor_back_right
+    400022: Motor_front_left
+    400024: Motor_front_right
+    400026: AirScrew2_left
+    400028: AirScrew2_right
+    400030: AirScrew3_left
+    400032: AirScrew3_right
+    400034: AirScrew4_left
+    400036: AirScrew4_right
+    2300000: AirScrew2
+    2300002: AirScrew3
+    2300004: AirScrew3_001
+    2300006: AirScrew3_002
+    2300008: AirScrew3_003
+    2300010: AirScrew4
+    2300012: Base
+    2300014: Cylinder
+    2300016: Motor_back_left
+    2300018: Motor_back_right
+    2300020: Motor_front_left
+    2300022: Motor_front_right
+    2300024: AirScrew2_left
+    2300026: AirScrew2_right
+    2300028: AirScrew3_left
+    2300030: AirScrew3_right
+    2300032: AirScrew4_left
+    2300034: AirScrew4_right
+    2300036: //RootNode
+    3300000: AirScrew2
+    3300002: AirScrew3
+    3300004: AirScrew3_001
+    3300006: AirScrew3_002
+    3300008: AirScrew3_003
+    3300010: AirScrew4
+    3300012: Base
+    3300014: Cylinder
+    3300016: Motor_back_left
+    3300018: Motor_back_right
+    3300020: Motor_front_left
+    3300022: Motor_front_right
+    3300024: AirScrew2_left
+    3300026: AirScrew2_right
+    3300028: AirScrew3_left
+    3300030: AirScrew3_right
+    3300032: AirScrew4_left
+    3300034: AirScrew4_right
+    3300036: //RootNode
+    4300000: Cylinder
+    4300002: AirScrew4
+    4300004: AirScrew2
+    4300006: Base
+    4300008: Motor_back_right
+    4300010: AirScrew3_003
+    4300012: Motor_front_right
+    4300014: AirScrew3_002
+    4300016: Motor_front_left
+    4300018: AirScrew3_001
+    4300020: Motor_back_left
+    4300022: AirScrew3
+    4300024: AirScrew3_left
+    4300026: AirScrew4_left
+    4300028: AirScrew2_left
+    4300030: AirScrew4_right
+    4300032: AirScrew2_right
+    4300034: AirScrew3_right
+    4300036: Drone1
+    4300038: Drone_Armored
+    6400000: //RootNode
+    6400002: Motor_back_left
+    6400004: Motor_back_right
+    6400006: Motor_front_left
+    6400008: Motor_front_right
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.125
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
