@@ -20,7 +20,9 @@ public class RobotLegsWheelsSteering : MonoBehaviour {
 	float speed;//prędkość obrotowa kół
 	public float maxSteer;
 	float steering;//kąt skrętu przedmich kół
+	public Vector2 highLimes;
 	public float high;//wysokośc nad ziemią bazy - najlepiej od 0f do 4.2f
+	public Vector2 spreadLimes;
 	public float spread;//to będzie łądny współczynnik rozstawu nóg
 	private float l2;
 	float[] wheelsHigh;
@@ -64,11 +66,16 @@ public class RobotLegsWheelsSteering : MonoBehaviour {
 	// y koła powinien byc prostopadły do normalnej powierzchni na której ono stoi
 	//baza powinna się utrzymywać na stałej, zadanej wysokości nad ziemią i przeszkodami
 	//mało tego baza ma być raczej poziomo
+	public void Steer(float axis_Vertical, float axis_Horizontal, float axis_SpreadRobot, float axis_HeightRobot){
+		speed = axis_Vertical*maxTorque;
+		steering = axis_Horizontal*maxSteer;
 
+		spread += axis_SpreadRobot* Time.deltaTime;
+		high += axis_HeightRobot * Time.deltaTime;
+	}
 	void FixedUpdate () {
-		speed = Input.GetAxis ("Vertical")*maxTorque;
-		steering = Input.GetAxis ("Horizontal")*maxSteer;
-
+		spread = Mathf.Clamp (spread, spreadLimes.x, spreadLimes.y);	
+		high = Mathf.Clamp (high, highLimes.x, highLimes.y);	
 		for (int i = 0; i < wheels.Length; i++) {
 			if (steeringWheel [i]) {
 				if (!wheelsActuators [i].front) {

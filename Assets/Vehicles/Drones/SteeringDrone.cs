@@ -160,16 +160,17 @@ public class SteeringDrone : MonoBehaviour
 	{
 		//if(gameManager)
 		//	if (gameManager.singlePlayer) {
-				Steer ();
+				//Steer ();
 		//	}
 		RotatePropellers (propellers, velPropellers, maxVel);
 	}
-	public void Steer(){
+	public void Steer(float axis_Thrust, float axis_Pitch, float axis_Roll, float axis_Yaw, float axis_Turbo,
+		bool butDown_Lights, bool butDown_Motors, bool butDown_Stabilize, bool butDown_KeepAltitude, bool butDown_SelfLeveling){
 		if (motorsOn) {
-			thrust = Input.GetAxis ("Thrust");
-			pitch = Input.GetAxis ("Pitch") * pitchFactor;
-			roll = Input.GetAxis ("Roll") * rollFactor;
-			yaw = Input.GetAxis ("Yaw") * yawFactor;
+			thrust = axis_Thrust;//Input.GetAxis ("Thrust");
+			pitch = axis_Pitch*pitchFactor;//Input.GetAxis ("Pitch") * pitchFactor;
+			roll = axis_Roll*rollFactor;//Input.GetAxis ("Roll") * rollFactor;
+			yaw = axis_Yaw*yawFactor;//Input.GetAxis ("Yaw") * yawFactor;
 
 			if (keepAltitude) {
 				thrust = Mathf.Clamp (thrust + zeroThrust, -1, 1);
@@ -195,22 +196,23 @@ public class SteeringDrone : MonoBehaviour
 			case DroneType.octacopter:
 				break;
 			case DroneType.prototype:
-				velPropellers [4] = -Input.GetAxis ("PrototypeTurbo")*turboSpeed;
-				velPropellers [5] = Input.GetAxis ("PrototypeTurbo")*turboSpeed;
-				velPropellers [6] = -Input.GetAxis ("PrototypeTurbo")*turboSpeed;
-				velPropellers [7] = Input.GetAxis ("PrototypeTurbo")*turboSpeed;
+				float tempfloat = axis_Turbo * turboSpeed;
+				velPropellers [4] = -tempfloat;//Input.GetAxis ("PrototypeTurbo")*turboSpeed;
+				velPropellers [5] = tempfloat;//Input.GetAxis ("PrototypeTurbo")*turboSpeed;
+				velPropellers [6] = -tempfloat;//Input.GetAxis ("PrototypeTurbo")*turboSpeed;
+				velPropellers [7] = tempfloat;//Input.GetAxis ("PrototypeTurbo")*turboSpeed;
 				break;
 			}
 
 		}
-		if (Input.GetButtonDown ("Flashlight")) {
+		if (butDown_Lights){//Input.GetButtonDown ("Lights")) {
 			if (flashLight.activeSelf) {
 				flashLight.SetActive (false);
 			} else {
 				flashLight.SetActive (true);
 			}
 		}
-		if (Input.GetButtonDown ("Turn off motors")) {
+		if (butDown_Motors){//Input.GetButtonDown ("Turn off motors")) {
 			if (motorsOn) {
 				motorsOn = false;
 				for (int i = 0; i < propellers.Length; i++) {
@@ -221,7 +223,7 @@ public class SteeringDrone : MonoBehaviour
 				motorsOn = true;
 			}
 		}
-		if (Input.GetButtonDown ("Stabilize")) {
+		if (butDown_Stabilize){//Input.GetButtonDown ("Stabilize")) {
 			if (stabilize) {
 				stabilize = false;
 				for (int i = 0; i < propellers.Length; i++) {
@@ -230,13 +232,13 @@ public class SteeringDrone : MonoBehaviour
 			} else
 				stabilize = true;
 		}
-		if (Input.GetButtonDown ("Keep altitude")) {
+		if (butDown_KeepAltitude){//Input.GetButtonDown ("Keep altitude")) {
 			if (keepAltitude)
 				keepAltitude = false;
 			else
 				keepAltitude = true;
 		}
-		if (Input.GetButtonDown ("Self leveling")) {
+		if (butDown_SelfLeveling){//Input.GetButtonDown ("Self leveling")) {
 			if(coroutine!=null)
 				StopCoroutine (coroutine);
 			coroutine = StartCoroutine (MoveWings ());
