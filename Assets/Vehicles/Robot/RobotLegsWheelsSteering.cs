@@ -28,8 +28,8 @@ public class RobotLegsWheelsSteering : MonoBehaviour {
 	float[] wheelsHigh;
 	float[] wheelsSpread;
 	WheelUpdater[] wheelsActuators;
-
-	void Start () {
+	bool turningInPlace;
+	void Awake () {
 		l2 = 4f * l * l;
 		wheelsHigh = new float[wheels.Length];
 		wheelsSpread = new float[wheels.Length];
@@ -61,30 +61,65 @@ public class RobotLegsWheelsSteering : MonoBehaviour {
 		}
 		if (holders1.Length > 0)
 			Base = holders1 [0].parent;
+		GetComponent<UnparentRigidbodies> ().enabled = true;
+		for (int i = 0; i < wheels.Length; i++) {
+			wheelsActuators [i].UpdateWheel (0, 0);
+		}
 	}
 
 	// y koła powinien byc prostopadły do normalnej powierzchni na której ono stoi
 	//baza powinna się utrzymywać na stałej, zadanej wysokości nad ziemią i przeszkodami
 	//mało tego baza ma być raczej poziomo
-	public void Steer(float axis_Vertical, float axis_Horizontal, float axis_SpreadRobot, float axis_HeightRobot){
+	public void Steer(float axis_Vertical, float axis_Horizontal, float axis_SpreadRobot, float axis_HeightRobot, bool butDown_turningInPlace){
 		speed = axis_Vertical*maxTorque;
 		steering = axis_Horizontal*maxSteer;
 
 		spread += axis_SpreadRobot* Time.deltaTime;
 		high += axis_HeightRobot * Time.deltaTime;
+		if (butDown_turningInPlace)
+			turningInPlace = !turningInPlace;
+	}
+	void OnDisable(){
+		for (int i = 0; i < wheels.Length; i++) {
+			if (steeringWheel [i]) {
+				if (!wheelsActuators [i].front) {
+					wheelsActuators [i].UpdateWheel (0, -steering);
+				} else {
+					wheelsActuators [i].UpdateWheel (0, steering);
+				}
+			} else {
+				wheelsActuators [i].UpdateWheel (0, 0);
+			}
+		}
 	}
 	void FixedUpdate () {
 		spread = Mathf.Clamp (spread, spreadLimes.x, spreadLimes.y);	
 		high = Mathf.Clamp (high, highLimes.x, highLimes.y);	
 		for (int i = 0; i < wheels.Length; i++) {
-			if (steeringWheel [i]) {
-				if (!wheelsActuators [i].front) {
-					wheelsActuators [i].UpdateWheel (speed, -steering);
+			if (turningInPlace) {
+				if (wheelsActuators [i].right) {
+					if (wheelsActuators [i].front) {
+						wheelsActuators [i].UpdateWheel (-steering*maxTorque/maxSteer, -30);
+					} else {
+						wheelsActuators [i].UpdateWheel (-steering*maxTorque/maxSteer, 30);
+					}
 				} else {
-					wheelsActuators [i].UpdateWheel (speed, steering);
+					if (wheelsActuators [i].front) {
+						wheelsActuators [i].UpdateWheel (steering*maxTorque/maxSteer, 30);
+					} else {
+						wheelsActuators [i].UpdateWheel (steering*maxTorque/maxSteer, -30);
+					}
 				}
-			}else {
-				wheelsActuators [i].UpdateWheel (speed, 0);
+			} else {
+				if (steeringWheel [i]) {
+					if (!wheelsActuators [i].front) {
+						wheelsActuators [i].UpdateWheel (speed, -steering);
+					} else {
+						wheelsActuators [i].UpdateWheel (speed, steering);
+					}
+				} else {
+					wheelsActuators [i].UpdateWheel (speed, 0);
+				}
 			}
 		}
 		KeepBase ();
@@ -121,10 +156,10 @@ public class RobotLegsWheelsSteering : MonoBehaviour {
 	}
 	void KeepBase(){
 		RaycastHit baseHit;
-		if (Physics.Raycast (Base.position, Vector3.down, out baseHit, 3f * l)) {
+		if (Physics.Raycast (Base.position, Vector3.down, out baseHit, Mathf.Infinity)) {
 			for (int i = 0; i < wheels.Length; i++) {
 				RaycastHit hit;
-				if (Physics.Raycast (wheels [i].position, Vector3.down, out hit, 2f)) {
+				if (Physics.Raycast (wheels [i].position, Vector3.down, out hit, Mathf.Infinity)) {
 					float dif = baseHit.point.y - hit.point.y;
 					wheelsHigh [i] = Mathf.Lerp(wheelsHigh[i],high + dif, armsSpeed*Time.deltaTime);
 				}

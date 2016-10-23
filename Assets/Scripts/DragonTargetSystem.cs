@@ -28,7 +28,7 @@ public class DragonTargetSystem : MonoBehaviour {
 	int target_point;//prywatne
 	// Use this for initialization
 	Animator anim;
-	void Awake () {
+	void Start () {
 		GetComponent<DragonGroundedMovement> ().enabled = !start_flying;
 		GetComponent<DragonFlightMovement> ().enabled = start_flying;
 		anim = GetComponent<Animator> ();

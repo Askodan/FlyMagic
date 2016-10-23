@@ -4,15 +4,12 @@ using System.Collections;
 public class PlayerSteering : MonoBehaviour {
 	public LayerMask mask;
 	PlayerSpecs specs;
-	[HideInInspector]
-	public SteeringDrone steeringDrone;
+	[HideInInspector] public SteeringDrone steeringDrone;
 
-	[HideInInspector]
-	public RobotLegsWheelsSteering robotWheelsSteering;
+	[HideInInspector] public RobotLegsWheelsSteering robotWheelsSteering;
+	[HideInInspector] public RobotGrabberPlayer robotGrabber;
 
-	[HideInInspector]
-	public tractorscripteasy tractorScriptEasy;
-
+	[HideInInspector] public tractorscripteasy tractorScriptEasy;
 	void Awake(){
 		specs = GetComponent<PlayerSpecs> ();
 	}
@@ -43,7 +40,8 @@ public class PlayerSteering : MonoBehaviour {
 				tractorScriptEasy.Steer (Input.GetButtonDown ("Break"), Input.GetButtonUp ("Break"), Input.GetAxis ("Vertical"), Input.GetAxis ("Horizontal"));
 				break;
 			case VehicleType.robot:
-				robotWheelsSteering.Steer (Input.GetAxis ("Vertical"), Input.GetAxis ("Horizontal"), Input.GetAxis ("Spread(robot)"), Input.GetAxis ("Height(robot)"));
+				robotWheelsSteering.Steer (Input.GetAxis ("Vertical"), Input.GetAxis ("Horizontal"), Input.GetAxis ("Spread(robot)"), Input.GetAxis ("Height(robot)"), Input.GetButtonDown ("Turning in place"));
+				robotGrabber.Steer (Input.GetButtonUp("Item outside"), Input.GetButtonUp ("Item inside"), Input.GetButton("Item outside"), Input.GetButton("Item inside"), Input.GetButtonDown ("Next Item"), Input.GetButtonDown ("Previous Item"), Input.GetButtonDown ("Hands Up"));
 				break;
 			}
 		}

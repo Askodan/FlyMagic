@@ -75,6 +75,9 @@ public class PlayerSpecs : MonoBehaviour {
 
 			playerSteering.robotWheelsSteering = newVehicle.GetComponent<RobotLegsWheelsSteering> ();
 			playerSteering.robotWheelsSteering.enabled = true;
+
+			playerSteering.robotGrabber = newVehicle.GetComponent<RobotGrabberPlayer> ();
+			playerSteering.robotGrabber.enabled = true;
 			break;
 		}
 		actualVehicle = newVehicle;
@@ -107,6 +110,7 @@ public class PlayerSpecs : MonoBehaviour {
 			mainVehicle.transform.parent = null;
 			mainVehicle.GetComponent<Rigidbody> ().isKinematic = false;
 			actualVehicle.GetComponent<RobotLegsWheelsSteering> ().enabled = false;
+			actualVehicle.GetComponent<RobotGrabberPlayer> ().enabled = false;
 			break;
 		}
 	}

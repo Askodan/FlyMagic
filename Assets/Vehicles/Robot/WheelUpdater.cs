@@ -15,11 +15,12 @@ public class WheelUpdater : MonoBehaviour {
 
 	HingeJoint joint;
 	Vector3 localPosition;
-
+	Transform parent;
 	//GameObject axis;
 	HingeJoint axis_joint;
 	//Rigidbody axis_rigidbody;
 	void Awake(){
+		parent = transform.parent;
 		//set up local position and joint
 		float minus = 1;
 		if (right) {
@@ -73,9 +74,9 @@ public class WheelUpdater : MonoBehaviour {
 			joint.motor = mot;
 		}
 		if (tester) {
-			tester.localPosition = localPosition + joint.connectedBody.transform.InverseTransformPoint(transform.parent.position);		
+			tester.localPosition = localPosition + joint.connectedBody.transform.InverseTransformPoint(parent.position);		
 		}
-		axis_joint.connectedAnchor = axis_joint.connectedBody.transform.InverseTransformPoint(transform.parent.position);
+		axis_joint.connectedAnchor = axis_joint.connectedBody.transform.InverseTransformPoint(parent.position);
 		//float minus = -1f;
 		//if (front)
 		//	minus = 1f;
